@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
 <!--    <link rel="stylesheet" href="outlines.css">-->
-    <link rel="stylesheet" href="./theme/pro-dark-theme/style.css">
+    <link rel="stylesheet" href="theme/pro-dark-theme/dark-style.css" id="theme-link">
     <title>Портфолио Junior верстальщика</title>
   </head>
 
-  <body>
+  <body class="page pro-dark-theme">
+    <!-- <?php
+      session_start();
+
+      if(!isset($_SESSION["theme"]))
+      {
+          $_SESSION["theme"] = "light";
+      }
+    ?> -->
+
     <header class="page-header">
       <div class="container">
-        <a href="mailto:sens78@gmail.com">sens78@gmail.com</a>
-        <a href="tel:+322223322">+322223322</a>
-        <button class="theme-button" type="button">Изменить тему</button>
+        <div class="contacts-wrap">
+          <div class="contacts">
+            <a href="mailto:sens78@gmail.com">sens78@gmail.com</a>
+            <a href="tel:+322223322">+322223322</a>
+          </div>
+          <button class="theme-button" type="button">Изменить тему</button>
+        </div>
       </div>
     </header>
 
@@ -67,5 +80,6 @@
           <a class="footer-phone" href="tel:+322223322">+322223322</a>  
         </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

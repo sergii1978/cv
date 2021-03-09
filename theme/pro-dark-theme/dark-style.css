@@ -22,6 +22,12 @@ body {
   padding: 40px 0;
 }
 
+.contacts-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .page-header a,
 .page-footer a {
   position: relative;
@@ -97,7 +103,36 @@ body {
   font-size: 12px;
   border-radius: 2px;
   background-color: transparent;
-  color: ffffff;
+  color: #ffffff;
+}
+
+.theme-button::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 12px;
+  background-image: url("../basic-dark-theme/img/moon.svg");
+}
+
+.theme-button:hover {
+  color: #333566;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+.theme-button:hover::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 12px;
+  color: #333566;
+  background-color: #ffffff;
+  background-image: url("../basic-dark-theme/img/moon-hover.svg");
+  transition: 0.3s;
 }
 
 .hero-image {
@@ -269,6 +304,7 @@ body {
 .portfolio {
   margin: 0;
   padding-bottom: 160px;
+  text-align: center;
 }
 
 .projects {
